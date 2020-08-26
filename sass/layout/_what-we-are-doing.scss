@@ -1,0 +1,24 @@
+.activities {
+  @extend %align-style;
+}
+.activities-item {
+  position: relative;
+}
+.title-activities {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  @include font(14px, 700);
+  line-height: 1.14;
+  text-align: center;
+  color: $background-colour;
+  background-color: $transparent-background;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  margin: 0px 0px;
+}
+
+.activities-item + .activities-item {
+  margin-left: 30px;
+}

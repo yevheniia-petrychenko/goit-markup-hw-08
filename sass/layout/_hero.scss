@@ -1,0 +1,24 @@
+.hero {
+  text-align: center;
+  background-color: $transparent-background;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  background-image: linear-gradient(
+      $transparent-background,
+      $transparent-background
+    ),
+    url(../images/header.jpg);
+  height: 600px;
+  max-width: 1600px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.hero-title {
+  @include font(44px, 900);
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: $background-colour;
+  margin-top: 0px;
+  margin-bottom: 30px;
+}

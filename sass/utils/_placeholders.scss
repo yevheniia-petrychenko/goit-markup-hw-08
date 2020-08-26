@@ -1,0 +1,18 @@
+%styles-for-modal-btn {
+  color: $background-colour;
+  background-color: $accent-colour;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  text-align: center;
+  border: 1px solid transparent;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+%align-style {
+  display: flex;
+  align-items: center;
+}
