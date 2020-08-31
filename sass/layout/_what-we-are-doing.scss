@@ -22,3 +22,8 @@
 .activities-item + .activities-item {
   margin-left: 30px;
 }
+@media screen and (min-width: 10px) and (max-width: 1199px) {
+  .our-activities {
+    display: none;
+  }
+}

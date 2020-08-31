@@ -1,16 +1,22 @@
 .clients-list {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  margin: -15px;
 }
-.clients-item a {
-  @extend %align-style;
-  justify-content: center;
-  border: 1px solid #afb1b8;
-  box-sizing: border-box;
-  border-radius: 4px;
-  width: 170px;
-  height: 90px;
-  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+.clients-item {
+  margin: 15px;
+  width: calc((100% - 2 * 30px) / 2);
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #afb1b8;
+    box-sizing: border-box;
+    border-radius: 4px;
+    // width: 170px;
+    height: 90px;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
 
 .clients-icon {
@@ -20,13 +26,21 @@
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.clients-item + .clients-item {
-  margin-left: 30px;
-}
 .clients-item a:hover {
   color: $accent-colour;
   border: 1px solid $accent-colour;
 }
 .clients-item a:hover .clients-icon {
   fill: $accent-colour;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .clients-item {
+    width: calc((100% - 3 * 30px) / 3);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .clients-item {
+    width: calc((100% - 6 * 30px) / 6);
+  }
 }

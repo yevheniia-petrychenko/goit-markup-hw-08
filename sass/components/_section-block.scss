@@ -1,12 +1,24 @@
 .section-block {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .section-title {
-  @include font(36px, 700);
-  line-height: 1.16;
+  @include font(28px, 700);
+  line-height: 1.17;
   text-align: center;
   color: $title-text-colour;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   margin-top: 0px;
+}
+@media screen and (min-width: 1200px) {
+  .section-block {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  .section-title {
+    font-weight: 700;
+    line-height: 1.16;
+    font-size: 36px;
+    margin-bottom: 50px;
+  }
 }

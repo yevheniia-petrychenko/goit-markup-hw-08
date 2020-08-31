@@ -14,28 +14,3 @@
 @import "./layout/our-team";
 @import "./layout/regular-client";
 @import "./layout/footer";
-
-mobile
-  width
-  480
-  tablet
-  width
-  768
-  desktop
-  width
-  1600
-@media screen and (min-width: 480) {
-  width: 480px;
-}
-@media screen and (min-width: 768) {
-  width: 768px;
-}
-@media screen and (min-width: 1600) {
-  width: 1600px;
-}
-margin-left {
-    auto
-}
-margin-right: ; {
-    auto
-} плюс паддинги по 15px

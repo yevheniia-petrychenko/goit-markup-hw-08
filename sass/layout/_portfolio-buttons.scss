@@ -1,11 +1,16 @@
 .button-list {
   display: flex;
-  padding-top: 93px;
-  padding-bottom: 50px;
-  justify-content: center;
+  // padding-top: 93px;
+  // padding-bottom: 50px;
+  // justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
 }
 .button-item + .button-item {
   margin-left: 8px;
+}
+.button-item:not(:nth-child(n + 4)) {
+  margin-bottom: 15px;
 }
 .button {
   display: block;

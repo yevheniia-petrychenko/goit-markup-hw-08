@@ -2,3 +2,7 @@
   font-size: $fs;
   font-weight: $fw;
 }
+@mixin flex() {
+  display: flex;
+  align-items: center;
+}

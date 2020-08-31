@@ -1,24 +1,50 @@
 .hero {
   text-align: center;
   background-color: $transparent-background;
-  padding-top: 200px;
-  padding-bottom: 200px;
   background-image: linear-gradient(
       $transparent-background,
       $transparent-background
     ),
-    url(../images/header.jpg);
-  height: 600px;
-  max-width: 1600px;
+    url(../images/Header-mobile.jpg);
+  height: 400px;
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
+  padding-top: 118px;
+  padding-bottom: 118px;
+  width: auto;
 }
 .hero-title {
-  @include font(44px, 900);
-  line-height: 1.36;
+  color: $background-colour;
+  @include font(26px, 900);
+  line-height: 1.62;
+  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: $background-colour;
-  margin-top: 0px;
   margin-bottom: 30px;
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: linear-gradient(
+        $transparent-background,
+        $transparent-background
+      ),
+      url(../images/Header-tablet.jpg);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    background-image: linear-gradient(
+        $transparent-background,
+        $transparent-background
+      ),
+      url(../images/Header-desktop.jpg);
+    height: 600px;
+  }
+
+  .hero-title {
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
