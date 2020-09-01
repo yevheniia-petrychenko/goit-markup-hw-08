@@ -1,12 +1,5 @@
 {
-  "folders": [
-    {
-      "path": ".."
-    },
-    {
-      "path": "..\\..\\goit-markup-hw-07"
-    }
-  ],
+  "folders": [],
   "settings": {
     "liveSassCompile.settings.formats": [
       {
